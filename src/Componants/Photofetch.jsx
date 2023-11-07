@@ -20,17 +20,17 @@ function Photofetch() {
 
     
     return (
-        <div>
-            <Container>
+        <div  >
+            <Container className="ms-auto">
 
             <h1>PhotoFetch</h1>
         
                 
-                    <Row className="justify-content-center">
+                    <Row>
                 {data.map(photo => (
                   
-                        <Col key={photo.id} md={6} sm={12} xl={4} className="g-4">
-                         <Card style={{ width: '18rem' }}>
+                        <Col key={photo.id} md={6} sm={12} lg={4} xl={3} className="g-4">
+                         <Card style={{ width: '100%', alignContent:"space-between" }}>
                             <Card.Img variant="top" src={photo.thumbnailUrl} />
                             <Card.Body>
                                 <Card.Title>{photo.title }</Card.Title>
